@@ -18,7 +18,34 @@
     <!-- 한국어 지원 -->
     <meta charset="UTF -8">
     <!-- 제목 -->
-    <title>나를 소개합니다.</title>
+    <title >나를 소개합니다.</title>
+    <!-- css 부분 -->
+    <style>
+        /* 글자색을 파란색으로
+        속성명과 속성값 가이에는 콜론(:) 으로 */
+        h2
+        {
+            color:darkseagreen ;
+        }
+        /* h2보다 ., #이 우선순위가 더 높음 */
+        #hobby
+        {
+            color:purple;
+        }
+        #favorite
+        {
+            color:blue;
+        }
+        .hobby, .food
+        {
+            color:darkorchid;
+        }
+        /* .food
+        {
+            color:steelblue;
+        } */
+
+    </style>
     </head>
 
 <!-- 실제 홈페이지 내용이 들어가는 태그 -->
@@ -26,28 +53,28 @@
     <!-- 주제, 제목을 나타냄(Heading) -->
     <!-- h1 ~ h6 까지 있으며 숫자가 클수록 글자의 크기는 작아진다 -->
     <h1>내 소개</h1>
-    <!-- 그림 불러오기 src:불러올 파일, alt : 그림 불러오기를 실패 했을 때  -->
+    <!-- 그림 불러오기 src:불러올 파일, alt : 그림 불러오기를 실패 했을 때 나올 문구  -->
     <!-- scr, alt 과 같은 속성은 태그의 세부적인 정보를 제공 -->
     <img src="다운로드.jpg" alt="그림 불러오기 실패">
 
-
-    <h2>취미</h2>
+<!-- id는 중복될 수 없고 고유값을 가진다 -->
+    <h2 id = "hobby">취미</h2>
 
     <!-- 순서가 없는 목록 (Unordered list)-->
-    <ul>
+    <ul id = "hobby1">
         <!--목록 list <li>는 <ol>과 <ul>같이 사용한다.-->
-        <li>코딩</li>
-        <li>공부</li>
-        <li>독서</li>
-        <li>청소</li>
+        <li class ="hobby">코딩</li>
+        <li class ="hobby">공부</li>
+        <li class ="hobby">독서</li>
+        <li class ="hobby">청소</li>
     </ul>
 
-    <h2>좋아하는 음식 순위</h2>
+    <h2 id = "favorite">좋아하는 음식 순위</h2>
     <!-- 순서가 있는 목록 (Ordered list)-->
     <ol>
-        <li>마라탕</li>
-        <li>꿔바로우</li>
-        <li>삼겹살</li>
+        <li class = "food">마라탕</li>
+        <li class = "food">꿔바로우</li>
+        <li class = "food">삼겹살</li>
     </ol>
 
     <!-- 행을 먼저 만들고 열을 만든다 -->
@@ -58,6 +85,7 @@
          <th>이름</th>
          <th>주소</th>
          <th>종류</th>
+
         </tr>
         <!-- 2행 -->
         <tr>
@@ -65,6 +93,7 @@
             <td>네이버</td>
             <td>www.naver.com</td>
             <td>포탈</td>
+
         </tr>
         <!-- 3행 -->
         <tr>
@@ -72,6 +101,7 @@
             <td>www.daum.net</td>
             <td>포탈</td>
         </tr>
+        
         <!-- 4행 -->
         <tr>
          <td>나무위키</td>
@@ -90,6 +120,7 @@
         <li>나무위키</li>
         <li>깃허브</li>
     </ul>
+
 
 </body>
 </html>
