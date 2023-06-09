@@ -97,40 +97,48 @@
     <table>
         <!-- 테이블의 제목 -->
         <caption>내가 자주 가는 사이트</caption>
-        <!-- 1행 -->
-        <tr>
-            <!-- <th> 본문을 설명해주는 셀 -->
-         <th>이름</th>
-         <th>주소</th>
-         <th>종류</th>
 
-        </tr>
-        <!-- 2행 -->
-        <tr>
-            <!-- <td> 본문(내용물)에 해당하는 셀 -->
-            <td>네이버</td>
-            <td>https://www.naver.com</td>
-            <td rowspan="2">포탈</td>
+        <thead>
+            <!-- 1행 -->
+            <tr>
+                <!-- <th> 본문을 설명해주는 셀 -->
+                <th>이름</th>
+                <th>주소</th>
+                <th>종류</th>
+            </tr>
+        </thead>
 
-        </tr>
-        <!-- 3행 -->
-        <tr>
-            <td>다음</td>
-            <td>www.daum.net</td>
-        <!-- 위에 rowspan에 의해 td는 2번만 -->
-        </tr>
+        <tbody>
+            <!-- 2행 -->
+            <tr>
+                <!-- <td> 본문(내용물)에 해당하는 셀 -->
+                <td>네이버</td>
+                <td>https://www.naver.com</td>
+                <td rowspan="2">포탈</td>
+
+            </tr>
+            <!-- 3행 -->
+            <tr>
+                <td>다음</td>
+                <td>www.daum.net</td>
+            <!-- 위에 rowspan에 의해 td는 2번만 -->
+            </tr>
+            
+            <!-- 4행 -->
+            <tr>
+            <td>나무위키</td>
+            <td>https://namu.wiki</td>
+            <td>위키백과</td>
+            </tr>
+        </tbody>
         
-        <!-- 4행 -->
-        <tr>
-         <td>나무위키</td>
-         <td>https://namu.wiki</td>
-         <td>위키백과</td>
-        </tr>
-        <!-- 5행 -->
-        <tr>
-            <td>자료제공</td>
-            <td colspan="2">JWP</td>
-        </tr>
+        <tfoot>
+            <!-- 5행 -->
+            <tr>
+                <td>자료제공</td>
+                <td colspan="2">JWP</td>
+            </tr>
+        </tfoot>
     </table>
 
     <!-- <h2>내가 자주 가는 사이트</h2>
