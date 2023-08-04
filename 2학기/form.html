@@ -5,11 +5,22 @@
     <title>form</title>
 </head>
 <body>
+    <!-- 줄바꿈 -->
+    <!-- for 속성에 id값을 매칭시켜서 <input>과 의미적으로 연결 -->
     
-    <label for="i_id">아이디</label>   
-    <input id = "i_id"type="text">
-    <label for="i_pas">비밀번호</label>
-    <input id = "i_pas" type="password">
-    <input type="submit" value="로그인">
+    <div>
+        <label for="i_id">아이디</label> 
+        <!--텍스트 정보를 담을 수 있는 공간  -->
+        <input id = "i_id"type="text">
+    </div>
+    
+    <div>
+        <label for="i_pas">비밀번호</label>
+        <!-- 비밀번호 정보를 담을 수 있는 공간 -->
+        <input id = "i_pas" type="password">
+</div>
+    <div>
+        <input type="submit" value="로그인">
+    </div>
 </body>
 </html>
