@@ -1,0 +1,57 @@
+body {
+    margin : 0;   
+    background-color: lightblue;
+    height: 100vh;
+    
+    /* 가로, 세로 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login-container {
+    background-color: lightyellow;
+    /* 배경색은 padding에도 영향을 준다.(margin X) */
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px lightslategray;
+}
+h1 {
+    color: cadetblue;
+    /* 박스 안에 있는 글자를 가운데로 */
+    text-align: center;
+}
+
+input {
+    box-sizing: border-box;
+    
+    /* content의 너비를 부모의 너비의 100% */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+#i_submit {
+    background-color: lightskyblue;
+    border: none;
+    cursor: pointer;
+}
+/* :hover 마우스를 갖다대면  */
+#i_submit:hover {
+   background-color: lightblue;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a{
+   color: lightsalmon;
+   /* 밑줄 제거 */
+   text-decoration: none;
+}
+.forgot-password a:hover{
+    text-decoration: underline;
+ }
