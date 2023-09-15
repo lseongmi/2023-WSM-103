@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        div {
+            /* 줄 간의 간격 */
+            line-height: 40px;
+        }
+        .size-l {
+            font-size: 50px;
+        }
+        .size-m {
+            font-size: 30px;
+        }
+        .size-s {
+            font-size: 20px;
+        }
+        .v-h {
+            /* 보이지 않아도 요소의 공간은 차지한다 */
+            visibility: hidden;
+        }
+        .o {
+            /* 투명도 0(안보임) ~ 1(선명) */
+            opacity: 0.3;
+        }
+        .td {
+            /* 우선순위가 같은 경우 최근 것만 적용된다. */
+            text-decoration: underline;
+            text-decoration: line-through;
+            text-decoration: overline;
+        }
+        .bg {
+            border: 1px solid black;
+            width: 60vh;
+            height: 60vh;
+
+            background-image: url(이미지.jpg);
+            background-repeat: repeat-y;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 클래스의 띄어쓰기를 하면 여러 선택자를 적용시킬 수 있다 -->
+    <div class="size-l v-h">하나</div>
+    <div class="size-m o">둘</div>
+    <div class="size-s td">셋</div>
+    <div class="bg"></div>
+</body>
+</html>
