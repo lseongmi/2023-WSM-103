@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px black solid;
+            /* cantent-box(기본 값)의 경우 박스의 폭은 width + 양 옆 padding + 양 옆 border  */
+            /* border-box의 경우 박스의 폭은 width가 된다. */
+            box-sizing: border-box;
+        }
+
+        .a {
+            padding: 20px;
+        }
+        
+        .b {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+</body>
+</html>
