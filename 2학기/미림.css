@@ -1,0 +1,39 @@
+ * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        div {
+            width: 500px;
+        }
+
+        .main {
+            /* 박스의 위치를 수평적인 가운데로 */
+            margin: auto;
+        }
+
+        img {
+            width: 500px;
+        }
+
+        .section {
+            border: 2px solid lightblue;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p {
+            /* 줄간격 */
+            line-height: 30px;
+        }
+        .accent {
+            font-size: 30px;
+            color: darkgreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;         
+        }
+        
+        ul {
+            list-style: none;
+        }
